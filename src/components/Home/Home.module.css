@@ -1,0 +1,17 @@
+.wrapper {
+  padding: 60px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
