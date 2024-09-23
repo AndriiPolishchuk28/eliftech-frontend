@@ -1,11 +1,16 @@
 import axios from 'axios';
 
-// axios.defaults.baseURL = 'https://eliftech-test-backend.onrender.com';
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = 'https://eliftech-test-backend.onrender.com';
+// axios.defaults.baseURL = 'http://localhost:4000';
 
-export const fetchEvents = async () => {
+export const fetchEvents = async (page, field, order) => {
   try {
-    const { data } = await axios.get('/');
+    const params = { page };
+    if (field && order) {
+      params.field = field;
+      params.order = order;
+    }
+    const { data } = await axios.get('/', { params });
     return data;
   } catch (error) {
     console.log(error);

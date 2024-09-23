@@ -4,3 +4,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  color: rgb(98, 104, 217);
+  font-size: 18px;
+}

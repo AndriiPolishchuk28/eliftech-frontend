@@ -1,5 +1,11 @@
 .wrapper {
-  padding: 60px 0;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  gap: 30px;
 }
 
 .title {
@@ -14,4 +20,8 @@
   flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.pagination {
+  padding-bottom: 30px;
 }

@@ -27,9 +27,13 @@ const EventItem = ({ title, description, event_date, organizer, _id: id }) => {
             </Typography>
             <Typography variant="body2">Date: {event_date}</Typography>
           </CardContent>
-          <CardActions>
-            <NavLink to={`/register/${id}`}>Register</NavLink>
-            <NavLink to={`/participants/${id}`}>View</NavLink>
+          <CardActions className={css.links}>
+            <NavLink className={css.link} to={`/register/${id}`}>
+              Register
+            </NavLink>
+            <NavLink className={css.link} to={`/participants/${id}`}>
+              View
+            </NavLink>
           </CardActions>
         </Card>
       </Box>

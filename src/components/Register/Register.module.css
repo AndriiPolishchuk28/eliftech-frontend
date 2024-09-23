@@ -1,8 +1,19 @@
+.register_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
 .form_wrapper {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 0 auto;
   gap: 15px;
 }
 
@@ -14,9 +25,13 @@
 }
 
 .input {
-  height: 40px;
-  border-radius: 15px;
+  height: 50px;
+  border-radius: 8px;
   outline: none;
+  border: 1px solid #e8e8e8;
+  background-color: #f6f6f6;
+  padding-left: 10px;
+  width: 400px;
 }
 
 .error {
@@ -25,7 +40,29 @@
 
 .btn_submit {
   padding: 15px 40px;
-  background-color: aqua;
+  background-color: #e8e8e8;
+  font-size: 18px;
   border: none;
   border-radius: 30px;
+}
+
+.radio_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.radio_label {
+  font-size: 18px;
+}
+
+.radiobtn_wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.radiobtn_wrapper label {
+  font-size: 18px;
 }
